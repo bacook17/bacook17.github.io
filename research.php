@@ -4,7 +4,7 @@
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <title>Ben Cook - Research</title>
   </head>
-  <body>
+  <body id="research">
     <!-- Header section: top of document. -->
     <div id="header">
       <?php include('header.html'); ?>
@@ -12,17 +12,10 @@
 
     </div>
 
-    <!-- Left edge: just decoration, for now. -->
-    <div class="left">
-      <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar">Home</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/research.php"><div class="nav-bar"
-									  id="this-page">Research</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful
-	  Links</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar">CV</div></a>
-      <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow
-	  me on Twitter</div></a>
-    </div>
+   <!-- Left edge: navigation bar. -->
+   <?php include('navbar.html'); ?>
+
+
     <!-- The body of the CV. -->
     <div class="right">
       <h2>My Past Research Projects</h2> Although my
@@ -216,6 +209,8 @@
 
     </div>
 
+<!-- Footer with contact info -->
   <?php include('footer.html'); ?>
+
   </body>
 </html>

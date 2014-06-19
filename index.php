@@ -4,7 +4,7 @@
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <title>Ben Cook - Home</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Header section: top of document. -->
     <div id="header">
       <?php include('header.html'); ?>
@@ -12,14 +12,10 @@
 
     </div>
 
-    <!-- Left edge: just decoration, for now. -->
-    <div class="left">
-      <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar" id="this-page">Home</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/research.php"><div class="nav-bar">Research</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful Links</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar">CV</div></a>
-      <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow me on Twitter</div></a>
-    </div>
+   <!-- Left edge: navigation bar. -->
+   <?php include('navbar.html'); ?>
+
+
     <!-- The body -->
     <div class="right">
       <img width=350px id="profile-pic" src="images/Cook_Peyton_cropped_more.jpg"/>
@@ -44,7 +40,8 @@
       <p>I was awarded one of six undergraduate Chambliss Medals (out of 300 competitors) for my poster presentation at the 223rd AAS Conference in January. <a href="http://aas.org/posts/news/2014/01/chambliss-student-poster-awards-aas-223">Check out the announcement here!</a> A copy of the poster can be found in my <em>CV</em> section.</p>
     </div>
 
-  <?php include('footer.html'); ?>
+   <!-- Footer with contact info -->
+   <?php include('footer.html'); ?>
 
   </body>
 </html>

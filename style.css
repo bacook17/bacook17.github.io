@@ -5,7 +5,7 @@ body {
 #header {
     z-index: 1;
     color: #0826A3;
-    position: fixed;
+    position: absolute;
     width: 98.8%;
     margin-top: -20px;
     height: 60px;
@@ -47,7 +47,7 @@ body {
 .nav-bar {
     display: block;
     text-align:center;
-    margin: 15px;
+    margin: 5%;
     float:none;
     background:#728DFF;
     font-weight:bold;
@@ -55,17 +55,25 @@ body {
     border:3px solid black;
     font-family:Garamond, sans-serif;
     border-radius:3px;
+    width:85%;
 }
 .nav-bar:hover {
     background:#E0E0E0;
-    color:#2B2B2B;
-    border-color: #2B2B2B;
 }
-[href=.] {
+body#home div#homenav{
+    background: #E0E0E0;
+}
+body#links div#linksnav{
+    background: #E0E0E0;
+}
+body#research div#researchnav{
+    background: #E0E0E0;
+}
+body#CV div#CVnav {
     background: #E0E0E0;
 }
 .sidebar {
-    clear:left;
+    clear: left;
     width: 15%;
     float: left;
     margin-top: 10px;
@@ -158,7 +166,7 @@ figcaption {
     position: relative;
     float: right;
     margin-top: 50px;
-    width: 77%;
+    width: 78%;
     background-color: #FFFFFF;
     margin-bottom: 10px;
     padding-left:30px;
