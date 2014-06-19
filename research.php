@@ -40,25 +40,33 @@
       <h4>Senior Thesis: Fall 2013 - Spring
 	2014<br>The distributions of baryons and dark
 	matter in the universe</h4>
-      <p>The cosmic baryon fraction - the fraction of
-	the universe's mass which is in the form of
-	ordinary matter - can be approximated through
-	study of the Cosmic Microwave Background. Yet
-	when measuring the collected baryonic mass in
-	clusters of galaxies - some of the largest
-	cosmic scales - observations consistently find
-	fewer baryons than would be expected from the
-	CMB measurements.</p>
+      <p>The cosmic baryon fraction - the fraction of the universe's
+	mass which is in the form of ordinary matter - can be
+	approximated through study of the Cosmic Microwave
+	Background. Yet when measuring the collected baryonic mass in
+	clusters of galaxies - some of the largest cosmic scales -
+	observations consistently find fewer baryons than would be
+	expected from the CMB measurements. Many theories predict that
+	feedback mechanisms (such as shock heating or supernovae)
+	expell a large fraction of baryons from the gravitational
+	potential of bound systems.</p>
       <p>For my senior thesis, advised by
 	<a href="http://www.princeton.edu/astro/people/faculty/neta/">Prof. Neta
-	Bahcall</a>, I am attempting to collect all available
-	measurements of the baryon fraction on a wide range of cosmic
-	scales, from the halos around galaxies to the outskirts of the
-	most massive clusters. My work involves an extensive review of
-	the literature in order to: 1) determine the hot gas fraction
-	in galaxy clusters from X-ray and SZ measurements and 2)
-	establish the stellar fraction on a variety of scales from
-	optical clustering catalogs.</p>
+	Bahcall</a>, I studied the distribution of baryons in a wide
+	range of "halos", including galaxies, groups, and clusters. We
+	investigated the stellar component of these systems with
+	integrated optical light, and studied the hot gas content of
+	groups and clutsers with available X-ray and SZ
+	observations. One of the most significant recent advances has
+	been the measurement of the mass of the Circumgalactic Medium,
+	a cool gasesous component which surrounds galaxies like the
+	Milky Way and, according, to observations
+	by <a href="http://www.stsci.edu/~tumlinso/COS-Halos/Welcome.html">The
+	COS-Halos Group could have as much baryonic mass as the galaxy
+	itself. Combined with measurements such as these, we concluded
+	that most halos of galacitc masses or higher have actually
+	retained the majority of the cosmic baryon fraction! You can
+	read a copy of my Senior Thesis [<a href="files/Cook_Thesis.pdf">here</a>].</p>
       
       <hr size=2>
       <figure class="research-fig">

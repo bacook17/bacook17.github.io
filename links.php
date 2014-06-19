@@ -18,18 +18,18 @@
 
 <!-- The body of the CV. -->
 <div class="right">
-   <img id="arxiv" src="http://openbiomed.info/wp-content/uploads/2010/08/arxiv.jpg"/>
+   <img id="arxiv" src="images/arxiv.jpg"/>
    <h2>Here are some useful links I use quite frequently</h2>
    <h4>General Research</h4>
    <ul>
    <li><a href="http://arxiv.org/archive/astro-ph">arXiv pre-print server</a> - for newly submitted astrophysics papers</li>
    <li><a href="http://labs.adsabs.harvard.edu/adsabs/">Astrophysics Data System</a> - search for all astrophysics papers</li>
    <li><a href="http://www.tug.org/begin.html">LaTeX Tutorial</a> - if you don't know <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>, learn it now!</li>
-			<li><a href="http://astrobites.org/">Astrobites</a> - arXiv reader's digest, written by graduate students for undergrads</li>
+   <li><a href="http://astrobites.org/">Astrobites</a> - arXiv reader's digest, written by graduate students for undergrads</li>
    <li><a href="http://www.mendeley.com/">Mendeley</a> - organizer for papers and references</li>
    </ul>
    <h4>Coding</h4>
-   <img id="python" src="http://www.pyzo.org/_images/python_logo.png" />
+   <img id="python" src="images/python_logo.png" />
    <ul>
    <li><a href="http://software-carpentry.org/">Software Carpentry</a> - various coding tutorials</li>
    <li><a href="http://python4astronomers.github.io/">Practical Python for Astronomers</a> - an excellent, applications-first tutorial</li>
