@@ -23,7 +23,25 @@
 	  Download this document as a PDF
       </div></a>
 
-      
+<h2 id="section">Contact Information</h2>
+<div style="float: left; width: 30%;">
+<ul>
+   Home Address:<br>
+   60 Garden St. Mail Stop 10<br>
+   Cambridge, MA 02138<br>
+   Email: <a href="mailto:bcook@g.harvard.edu">bcook@g.harvard.edu</a>
+</ul>
+</div>
+<div style="float: left; width: 45%;">
+<ul>
+   Phone: (603) 313-2888<br>
+   Homepage: <a href="http://www.astro.princeton.edu/~bacook">www.astro.princeton.edu/~bacook</a><br>
+   Blog: <a href="http://violentrelaxation.wordpress.com">violentrelaxation.wordpress.com</a><br>
+   Twitter: <a href="http://twitter.com/bacook17">@bacook17</a>
+</ul>
+</div>
+
+<div style="float:left; width:95%;">
       <h2 id="section">Education</h2>
       <ul>
 	<p><strong>Harvard University</strong>, Harvard, MA &nbsp;
@@ -34,7 +52,7 @@
 	<p><strong>Princeton University</strong>, Princeton, NJ
           &nbsp; &nbsp; &nbsp; &nbsp; 2010 &mdash; 2014</p>
         <ul>
-          <li>A.B. Astrophysical Sciences -- Magna cum laude</li>
+          <li>A.B. Astrophysical Sciences &mdash; Magna cum laude</li>
           <li>Thesis: <em>Keep Calm and Baryon: The Distribution of Baryons and Dark Matter in the Universe</em></li>
           <li>Thesis adviser: Prof. Neta Bahcall</li>
         </ul>
@@ -158,6 +176,7 @@
 	<ul>Linux, <em>Chandra</em> CIAO, GIT, FITS</ul>
       </ul>
     </div>
+</div>
 
 	  <!-- Footer with contact info -->
   <?php include('footer.html'); ?>
