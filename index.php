@@ -6,19 +6,25 @@
   </head>
   <body>
     <!-- Header section: top of document. -->
-   <?php include('header.html'); ?>
+    <div id="header">
+      <div id="name"><strong>Ben Cook</strong></div>
+      <div id="email"><a class="white-link"
+      href="mailto:bacook@princeton.edu">bacook@princeton.edu</a></div>
+      <div id="title">Home Page</div>
+
+    </div>
 
     <!-- Left edge: just decoration, for now. -->
     <div class="left">
       <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar" id="this-page">Home</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/research.html"><div class="nav-bar">Research</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/links.html"><div class="nav-bar">Useful Links</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/CV.html"><div class="nav-bar">CV</div></a>
+      <a href="http://www.astro.princeton.edu/~bacook/research.php"><div class="nav-bar">Research</div></a>
+      <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful Links</div></a>
+      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar">CV</div></a>
       <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow me on Twitter</div></a>
     </div>
     <!-- The body -->
     <div class="right">
-      <img width=350px id="profile-pic" src="http://www.astro.princeton.edu/~bacook/images/Cook_Peyton_cropped_more.jpg"/>
+      <img width=350px id="profile-pic" src="images/Cook_Peyton_cropped_more.jpg"/>
       <h2>Greetings, and welcome to my new webpage!</h2>
       <p>I'm a senior in the astrophysical sciences department at Princeton, and will be pursuing a PhD in Astronomy and Astrophysics at Harvard beginning in the fall!</p>
       <p>My main scientific interests are in extragalactic astronomy and cosmology, which is the study of the history, evolution, and makeup of the universe as a whole. For example, one question which cosmologists hope to answer is: <em>What is Dark Energy, and what role has it played in the way that galaxies and galaxy clusters form?</em> As a graduate student, I will be tackling questions such as this, through some unkown combination of observational research and computational simulations.</p>

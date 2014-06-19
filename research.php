@@ -6,15 +6,22 @@
   </head>
   <body>
     <!-- Header section: top of document. -->
-   <?php include('header.html'); ?>
+    <div id="header">
+      <div id="name"><strong>Ben Cook</strong></div>
+      <div id="email"><a class="white-link"
+      href="mailto:bacook@princeton.edu">bacook@princeton.edu</a></div>
+      <div id="title">Research</div>
+
+    </div>
+
     <!-- Left edge: just decoration, for now. -->
     <div class="left">
       <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar">Home</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/research.html"><div class="nav-bar"
+      <a href="http://www.astro.princeton.edu/~bacook/research.php"><div class="nav-bar"
 									  id="this-page">Research</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/links.html"><div class="nav-bar">Useful
+      <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful
 	  Links</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/CV.html"><div class="nav-bar">CV</div></a>
+      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar">CV</div></a>
       <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow
 	  me on Twitter</div></a>
     </div>

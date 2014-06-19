@@ -13,13 +13,15 @@
       <div id="title">Curriculum Vitae</div>
 
     </div>
+
+
     <!-- Left edge: just decoration, for now. -->
     <div class="left">
       <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar">Home</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/research.html"><div class="nav-bar">Research</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/links.html"><div class="nav-bar">Useful
+      <a href="http://www.astro.princeton.edu/~bacook/research.php"><div class="nav-bar">Research</div></a>
+      <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful
       Links</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/CV.html"><div class="nav-bar"
+      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar"
       id="this-page">CV</div></a>
       <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow
       me on Twitter</div></a>
