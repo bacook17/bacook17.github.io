@@ -169,11 +169,14 @@ figcaption {
 }
 
 h2 {
-    font-size:1.5em;
+    font-size: 1.5em;
     font-family: Verdana, sans-serif;
 }
 h4 {
-    font-size:1.3em;
+    font-size: 1.3em;
+}
+#section {
+    font-variant:small-caps;
 }
 p {
     font-size:1em;
