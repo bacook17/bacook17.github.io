@@ -19,8 +19,7 @@
       <a href="http://www.astro.princeton.edu/~bacook/research.php"><div class="nav-bar">Research</div></a>
       <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful
       Links</div></a>
-      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar"
-      >CV</div></a>
+      <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar">CV</div></a>
       <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow
       me on Twitter</div></a>
     </div>
