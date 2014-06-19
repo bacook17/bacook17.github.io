@@ -7,9 +7,7 @@
   <body>
     <!-- Header section: top of document. -->
     <div id="header">
-      <div id="name"><strong>Ben Cook</strong></div>
-      <div id="email"><a class="white-link"
-      href="mailto:bacook@princeton.edu">bacook@princeton.edu</a></div>
+      <?php include('header.html'); ?>
       <div id="title">Research</div>
 
     </div>

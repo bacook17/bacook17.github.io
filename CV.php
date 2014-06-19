@@ -7,9 +7,7 @@
   <body>
     <!-- Header section: top of document. -->
     <div id="header">
-      <div id="name"><strong>Ben Cook</strong></div>
-      <div id="email"><a class="white-link"
-      href="mailto:bacook@princeton.edu">bacook@princeton.edu</a></div>
+      <?php include('header.html'); ?>
       <div id="title">Curriculum Vitae</div>
 
     </div>
@@ -22,7 +20,7 @@
       <a href="http://www.astro.princeton.edu/~bacook/links.php"><div class="nav-bar">Useful
       Links</div></a>
       <a href="http://www.astro.princeton.edu/~bacook/CV.php"><div class="nav-bar"
-      id="this-page">CV</div></a>
+      >CV</div></a>
       <a href="https://twitter.com/bacook17"><div class="nav-bar">Follow
       me on Twitter</div></a>
     </div>
