@@ -168,15 +168,7 @@
       </ul>
     </div>
 
-    <a href="http://www.astro.princeton.edu"><img class = "sidebar" src="images/Peyton.jpg" /></a>
-    <img class = "sidebar" src="images/whirlpool.jpg"/>
-    
-    <!-- Footer with contact info -->
-    <div id="footer">
-      2855 Frist Center, Princeton, NJ 08544 | <a class="white-link"
-      href="http://www.astro.princeton.edu/~bacook">www.astro.princeton.edu/~bacook</a>
-      | 603-313-2888 | <a class="white-link"
-      href="https://twitter.com/bacook17">Twitter: @bacook17</a>
-    </div>
+  <?php include('footer.html'); ?>
+
   </body>
 </html>

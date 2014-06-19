@@ -6,13 +6,7 @@
   </head>
   <body>
     <!-- Header section: top of document. -->
-    <div id="header">
-      <div id="name"><strong>Ben Cook</strong></div>
-      <div id="email"><a class="white-link"
-		         href="mailto:bacook@princeton.edu">bacook@princeton.edu</a></div>
-      <div id="title">Research</div>
-
-    </div>
+   <?php include('header.html'); ?>
     <!-- Left edge: just decoration, for now. -->
     <div class="left">
       <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar">Home</div></a>
@@ -217,17 +211,6 @@
 
     </div>
 
-    <a href="http://www.astro.princeton.edu"><img class = "sidebar" src="images/Peyton.jpg" /></a>
-    <img class = "sidebar" src="images/whirlpool.jpg"/>
-
-    <!-- Footer with contact info -->
-    <div id="footer">
-      2855 Frist Center, Princeton, NJ 08544
-      | <a class="white-link"
-	   href="http://www.astro.princeton.edu/~bacook">www.astro.princeton.edu/~bacook</a>
-      | 603-313-2888 | <a class="white-link"
-		          href="https://twitter.com/bacook17">Twitter:
-	@bacook17</a>
-    </div>
+  <?php include('footer.html'); ?>
   </body>
 </html>

@@ -6,12 +6,8 @@
   </head>
   <body>
     <!-- Header section: top of document. -->
-    <div id="header">
-      <div id="name"><strong>Ben Cook</strong></div>
-      <div id="email"><a class="white-link" href="mailto:bacook@princeton.edu">bacook@princeton.edu</a></div>
-      <div id="title">Home Page</div>
+   <?php include('header.html'); ?>
 
-    </div>
     <!-- Left edge: just decoration, for now. -->
     <div class="left">
       <a href="http://www.astro.princeton.edu/~bacook"><div class="nav-bar" id="this-page">Home</div></a>
@@ -44,12 +40,7 @@
       <p>I was awarded one of six undergraduate Chambliss Medals (out of 300 competitors) for my poster presentation at the 223rd AAS Conference in January. <a href="http://aas.org/posts/news/2014/01/chambliss-student-poster-awards-aas-223">Check out the announcement here!</a> A copy of the poster can be found in my <em>CV</em> section.</p>
     </div>
 
-    <a href="http://www.astro.princeton.edu"><img class = "sidebar" src="images/Peyton.jpg" /></a>
-    <img class = "sidebar" src="images/whirlpool.jpg"/>
-    
-    <!-- Footer with contact info -->
-    <div id="footer">
-      2855 Frist Center, Princeton, NJ 08544 | <a class="white-link" href="http://www.astro.princeton.edu/~bacook">www.astro.princeton.edu/~bacook</a> | 603-313-2888 | <a class="white-link" href="https://twitter.com/bacook17">Twitter: @bacook17</a>
-    </div>
+  <?php include('footer.html'); ?>
+
   </body>
 </html>
