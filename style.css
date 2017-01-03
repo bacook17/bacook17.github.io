@@ -1,6 +1,29 @@
 body {
     background: #969696;
 }
+/* Different Links */
+a {
+    text-decoration:none;
+}
+a:link {
+    color:#07a4d1;
+}
+a:visited {
+    color:#07a4d1;
+}
+a:hover {
+    color:#aee0e8;
+}
+.white-link:link {
+    color: #0826A3;
+}
+.white-link:visited {
+    color:#0826A3;
+}
+.white-link:hover {
+    color:#ACB4D4;
+}
+
 /* Header Details */
 #header {
     z-index: 1;
@@ -56,10 +79,16 @@ body {
     font-family:Garamond, sans-serif;
     border-radius:3px;
     width:85%;
+    position:inherit;
 }
 .nav-bar:hover {
     background:#E0E0E0;
 }
+/* Show the dropdown menu on hover */
+.nav-bar:hover .dropdown-content {
+    display: block;
+}
+
 body#home div#homenav{
     background: #E0E0E0;
 }
@@ -78,27 +107,38 @@ body#CV div#CVnav {
     float: left;
     margin-top: 10px;
 }
-/* Different Links */
-a {
-    text-decoration:none;
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    float:none;
+    border:3px solid black;
+    width:85%;
+    font-weigpht:bold;
+    color: black;
+    font-family:Garamond, sans-serif;
+    display: none;
+    position: absolute;
+    left:101%;
+    top:-14%;
+    background-color: #728DFF;
+    z-index:1;
 }
-a:link {
-    color:#07a4d1;
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
-a:visited {
-    color:#07a4d1;
-}
-a:hover {
-    color:#aee0e8;
-}
-.white-link:link {
-    color: #0826A3;
-}
-.white-link:visited {
-    color:#0826A3;
-}
-.white-link:hover {
-    color:#ACB4D4;
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #E0E0E0}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 /* CV Details: CV Button */
@@ -211,6 +251,6 @@ p.tex sub, .latex sub {
 .latex sup {
   font-size: 0.85em;
   vertical-align: 0.15em;
-  margin-left: -0.36em;
+p  margin-left: -0.36em;
   margin-right: -0.15em;
 }
