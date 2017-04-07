@@ -1,4 +1,4 @@
-pages = index.html research.html projects.html professional.html
+pages = index.html research.html projects.html professional.html pcmd_demo.html pcmd_game.html
 
 utils = style.css src/header.html src/navbar.html src/footer.html
 
@@ -6,6 +6,14 @@ default: $(pages)
 
 %.html : src/%.html $(utils)
 	cp $< $@
+	sed -e '/INSERT_SCRIPT_HERE/ {' -e 'r src/demo.script' -e 'd' -e '}' $@ > $@_temp
+	mv $@_temp $@
+	sed -e '/INSERT_DIV_HERE/ {' -e 'r src/demo.script' -e 'd' -e '}' $@ > $@_temp
+	mv $@_temp $@
+	sed -e '/INSERT_SCRIPT_HERE/ {' -e 'r src/game.script' -e 'd' -e '}' $@ > $@_temp
+	mv $@_temp $@
+	sed -e '/INSERT_DIV_HERE/ {' -e 'r src/game.script' -e 'd' -e '}' $@ > $@_temp
+	mv $@_temp $@
 	sed -e '/INSERT_HEADER_HERE/ {' -e 'r src/header.html' -e 'd' -e '}' $@ > $@_temp
 	mv $@_temp $@
 	sed -e '/INSERT_NAVBAR_HERE/ {' -e 'r src/navbar.html' -e 'd' -e '}' $@ > $@_temp
