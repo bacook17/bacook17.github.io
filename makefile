@@ -1,6 +1,6 @@
 pages = index.html research.html projects.html professional.html pcmd_demo.html pcmd_game.html
 
-utils = style.css src/header.html src/navbar.html src/footer.html
+utils = style.css src/header.html src/navbar.html src/footer.html src/demo.script src/demo.div src/game.script src/game.div
 
 default: $(pages)
 
