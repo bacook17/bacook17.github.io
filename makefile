@@ -6,13 +6,13 @@ default: $(pages)
 
 %.html : src/%.html $(utils)
 	cp $< $@
-	sed -e '/INSERT_SCRIPT_HERE/ {' -e 'r src/demo.script' -e 'd' -e '}' $@ > $@_temp
+	sed -e '/INSERT_DEMO_SCRIPT_HERE/ {' -e 'r src/demo.script' -e 'd' -e '}' $@ > $@_temp
 	mv $@_temp $@
-	sed -e '/INSERT_DIV_HERE/ {' -e 'r src/demo.script' -e 'd' -e '}' $@ > $@_temp
+	sed -e '/INSERT_DEMO_DIV_HERE/ {' -e 'r src/demo.div' -e 'd' -e '}' $@ > $@_temp
 	mv $@_temp $@
-	sed -e '/INSERT_SCRIPT_HERE/ {' -e 'r src/game.script' -e 'd' -e '}' $@ > $@_temp
+	sed -e '/INSERT_GAME_SCRIPT_HERE/ {' -e 'r src/game.script' -e 'd' -e '}' $@ > $@_temp
 	mv $@_temp $@
-	sed -e '/INSERT_DIV_HERE/ {' -e 'r src/game.script' -e 'd' -e '}' $@ > $@_temp
+	sed -e '/INSERT_GAME_DIV_HERE/ {' -e 'r src/game.div' -e 'd' -e '}' $@ > $@_temp
 	mv $@_temp $@
 	sed -e '/INSERT_HEADER_HERE/ {' -e 'r src/header.html' -e 'd' -e '}' $@ > $@_temp
 	mv $@_temp $@
