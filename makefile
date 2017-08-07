@@ -29,4 +29,4 @@ copy: *.html *.css
 	cp ~/CV/Cook_CV.pdf files/
 	cp ~/CV/Cook_resume.pdf files/
 	echo "Should be connected to VPN"
-	scp -r *.html *.css files/ images/ bcook@cfa0.cfa.harvard.edu:/data/wdocs/bcook/www-docs/.
+	scp -r *.html *.css files/ images/ bcook@mars.cfa.harvard.edu:/data/wdocs/bcook/www-docs/.
