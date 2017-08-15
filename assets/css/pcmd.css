@@ -10,18 +10,13 @@
 /* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    /*margin: 0;
+    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;*/
-    /*vertical-align: baseline;*/
+    font: inherit;
+    vertical-align: baseline;
 }
-
-div.bk-widget-box {
-    box-sizing: content-box !important;
-}
-
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -49,9 +44,9 @@ table {
     border-spacing: 0;
 }
 
-/*body {
+body {
     -webkit-text-size-adjust: none;
-}*/
+}
 
 /* Box Model */
 
@@ -96,11 +91,11 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-sw
 
 /* Type */
 
-/*html {
+html {
     font-size: 16pt;
-}*/
+}
 
-/*@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) {
 
     html {
 	font-size: 12pt;
@@ -122,7 +117,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-sw
 	font-size: 10pt;
     }
 
-} */
+}
 
 body, input, select, textarea {
     color: #ffffff;
@@ -1113,7 +1108,7 @@ button {
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
     -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    background-image: url("../../images/bg3.jpg");
+    background-image: url("../../images/bg4.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
