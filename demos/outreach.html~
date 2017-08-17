@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+  <head>
+    <title>Ben Cook - PCMDs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link
+       href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css"
+       rel="stylesheet" type="text/css">
+    <link
+       href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.css"
+       rel="stylesheet" type="text/css">
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js"></script>
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.js"></script>
+INSERT_DEMO_SCRIPT_1_HERE
+INSERT_DEMO_SCRIPT_2_HERE
+INSERT_DEMO_SCRIPT_3_HERE
+  </head>
+  <body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <header id="header">
+	<div class="content">
+	  <div class="inner">
+	    <h1>Pixel Color-Magnitude Diagrams</h1>
+	  </div>
+	</div>
+	<nav>
+	  <ul>
+	    <li><a href="#demo1">Simple Demo</a></li>
+	    <li><a href="#demo2">Advanced Demo</a></li>
+	    <li><a href="#game">Game</a></li>
+	    <li><a href="index.html">Return Home</a></li>
+	  </ul>
+	</nav>
+      </header>
+      
+      <div id="main">
+
+	<!-- Demo -->
+	<article id="demo1" style="width:1200px">
+	  <h2 class="major">Simple Pixel-CMD Demo</h2>
+	  <p> test </p>
+INSERT_DEMO_DIV_1_HERE
+	</article>
+
+	<!-- Advanced Demo -->
+	<article id="demo2" style="width:1800px;height:1000px">
+	  <h2 class="major">Advanced Pixel-CMD Demo</h2>
+	  <p> test </p>
+INSERT_DEMO_DIV_2_HERE
+	</article>
+
+	<!-- Game -->
+	<article id="game" style="width:1200px">
+	  <h2 class="major">Pixel-CMD Game</h2>
+	  <p> test </p>
+INSERT_DEMO_DIV_3_HERE
+	</article>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+	<p class="copyright">&copy; 2017 Ben Cook. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+	<p class="copyright">Images courtesy of NASA/Hubble.</p>
+      </footer>
+    </div>
+    <!-- BG -->
+    <div id="bg" class="bg1"></div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
