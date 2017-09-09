@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!Doctype HTML>
 <!--
     Dimension by HTML5 UP
     html5up.net | @ajlkn
@@ -25,27 +25,270 @@
 	</div>
 	<nav>
 	  <ul>
-	    <li><a href="#p1">Project 1</a></li>
-	    <li><a href="#p2">Project 2</a></li>
+	    <li><a href="#baseball">Baseball Statistics</a></li>
+	    <li><a href="#monkey">Autonomous Gameplay</a></li>
+	    <li><a href="#masters">Master's<br>Thesis</a></li>
+	    <li><a href="#phd">PhD<br> Thesis</a></li>
 	    <li><a href="index.html">Return Home</a></li>
 	  </ul>
 	</nav>
       </header>
+    
+    <div id="main">
       
-      <div id="main">
+      <!-- Baseball Stats -->
+      <article id="baseball">
+	<h2 class="major">Baseball Statistics</h2>
+	<h4>Applying Collaborative Filtering to Pitcher-Batter matchups</h4>
 
-	<!-- Demo -->
-	<article id="p1">
-	  <h2 class="major">Project1</h2>
-	  <p> test </p>
-	</article>
+	<p>For more technical details, see
+	our <a href="https://sites.google.com/a/college.harvard.edu/cs109-baseball/home">project
+	webpage</a> and the <a href="https://github.com/bacook17/CS109_baseball/blob/master/Master_Notebook.ipynb">project notebook</a> on GitHub.</p>
 
-	<!-- Game -->
-	<article id="p2">
-	  <h2 class="major">Project 2</h2>
-	  <p> test </p>
-	</article>
-      </div>
+	<hr>
+	<p>
+	
+	<p>Imagine you're the manager of the
+	Chicago Cubs, trying to win the last game
+	of the World Series. Your best player has
+	just been injured, and you need to pick
+	the best pinch-hitter to replace him for a
+	crucial at-bat. Your last two players, Abe
+	and Bruce, both have identical .250
+	batting averages. You think, "Maybe one
+	has more success against the opposing
+	pitcher, Charlie," but alas neither of
+	them has ever faced him before!</p>
+
+	<p>In the final project for Harvard's Data
+	Science course AC 209 (Fall 2015), our
+	team of 4 developed an approach to solving
+	this problem using <em>collaborative
+	filtering</em>, the same framework used by
+	companies like Netflix to predict whether
+	you will like a movie. In the Netflix
+	model, other users are assigned similarity
+	ratings to you, based on how much you
+	liked the same sets of movies. Netflix
+	makes the assumption that if users who are
+	similar to you liked the new movie in
+	question, then you probably will too!</p>
+
+	<p>Our baseball analysis relied on a
+	similar supposition: that we should be
+	able to find sets of "similar" batters to
+	Abe and Bruce, and that those batters'
+	success against Charlie will predict how
+	well Abe and Bruce are likely to do. Just
+	like Netflix finds that some users really
+	like sci-fi movies, we hoped to identify
+	groups of batters who (for example) did
+	well against fastball pitchers, and others
+	  who do well against the curve-ball.</p>
+
+	<p>My primary contribution to the project
+	was in collecting, cleaning, and
+	distributing a database of player
+	statistics. The key data required was: how
+	many times has each MLB batter faced each
+	MLB pitcher, and how successful were they?
+	While there are neatly curated databases
+	listing all MLB batters and pitchers such
+	as
+	the <a href="http://www.seanlahman.com/baseball-archive/statistics/">Lahman
+	Database</a>, the only online database of
+	batter-pitcher matchups is collected in a
+	large series of fairly unstructured HTML
+	pages
+	through <a href="http://www.retrosheet.org/site.htm">retrosheet.org</a>
+	(example page
+	for <a href="http://www.retrosheet.org/boxesetc/S/MU0_sosas001.htm">Sammy
+	    Sosa</a> is shown below).</p>
+
+	<span class="image main"><img src="images/Sosa_Matchup.png" alt="Sammy Sosa Retrosheet record" width="100%"/></span>
+
+	<p>I developed code to crawl the
+	Retrosheet encyclopedia and scrape the
+	matchup data for each MLB player,
+	collecting the HTML data into a Pandas
+	dataframe to be analyzed in Python. Our
+	group then developed a variety of
+	collaborative filtering models and used
+	them to try to predict the success of
+	individual batters against particular
+	  pitchers.</p>
+
+	<p>Unfortunately, our models were only
+	  marginally more successful than using a
+	  batter's overall batting average. We
+	  suspect that this indicates that a
+	  batter's success against various
+	  pitchers is primarily due to luck and
+	  small-number statistics (most batters
+	  hadn't faced a given pitcher more than
+	  10 times), and not to
+	  statistically-significant differences in
+	  their abilities against that pitcher.
+	</p>
+
+
+      </article>
+	  
+      <!-- Swingy-Monkey -->
+      <article id="monkey">
+	<h2 class="major">Autonomous Gameplay</h2>
+	<h4>Reinforcement learning used to outperform humans on computer game</h4>
+
+	<p>For more details, see <a href="files/CS181_Practical4.pdf">the technical writeup</a> produced for the course. The video below shows my algorithm learning and playing the game. The algorithm successfully learns and improves on human performance by run 57 (1:09 in the video).</p>
+
+	<iframe width="560", height="315", src="https://www.youtube.com/embed/xlPGnRSuM7U?rel=0"
+	frameborder="0" allowfullscreen></iframe>
+
+	<p><hr><p>
+	
+	<p>Computers are continuing to outperform
+	humans in a variety of skill- and
+	intelligence-based games, such as Chess
+	and Go. Many of the successful algorithms
+	include a combination of expert-written
+	heuristics and analysis of millions of
+	human-played games.</p>
+
+	<p>For the final project of Harvard's
+	Machine Learning course CS 181 (Spring
+	2016), my partner and I designed
+	algorithms which could learn to play a
+	simple computer game (<i>Swingy
+	Monkey</i>, an open-source game inspired
+	by <i>Flappy Bird</i>) solely through
+	trial-and-error. After only 57 games (1
+	minute) played, my algorithm could
+	consistently match or best human
+	  abilities.</p>
+
+	<p>The video game is straight-forward: a monkey sprite,
+	controlled by the user, moves through the jungle at a constant
+	x-velocity and subject to gravity. The user must choose when
+	to "jump" (grab a vine and swing), such that the monkey passes
+	through gaps in the trees and does not fall off the
+	screen. The basic algorithm to learn gameplay is likewise
+	fairly straight-forward: given a particular <i>state</i>
+	(position, velocity, distance to tree, etc), decide whether to
+	jump or continue falling. The algorithm begins with no prior
+	knowledge of which actions should be taken, so it must begin
+	by taking random actions, seeing how well those actions do,
+	and eventually transitioning to using its knowledge to play
+	optimally (see the <a href="https://en.wikipedia.org/wiki/Multi-armed_bandit">Multi-armed Bandit</a> problem).</p>
+
+	<p>The key conceptual challenges to designing a successful algorithm were:
+	  <ol style="font-size:1.25em">
+	    <li>Which properties should be included and modeled as part of the monkey's state?</li>
+	    <li>The monkey never returns to <i>exactly</i> the same point in state-space. How do we identify "similar" situations to learn from?</li>
+	    <li>How long should the algorithm "learn" for, and when should it instead switch over to trying to play the best it can?</li>
+	  </ol>
+	  </p>
+	<p>One of my major contributions to the project was in
+	answering question (1), using domain knowledge from physics to
+	design an optimal set of state properties which would be
+	useful in solving the problem. We then developed two different
+	solutions to question (2): discretizing the state-space into a
+	matrix, and linearly-interpolating between observed
+	points. The discretization algorithm was inefficient, as
+	either the grid was too coarse and couldn't make accurate
+	predictions, or took extremely long before enough datapoints were
+	  collected in each state-space bin to make a correct prediction.</p>
+
+	<p>In contrast, the linear-interpolation algorithm was
+	extremely efficient at learning to play the game successfully,
+	and after only 1 minute of gameplay (56 games played), managed
+	to outperform human abilities by playing for over 2.5
+	consecutive minutes without failing. The video above shows the
+	results (best run at 1:09).</p>
+      </article>
+      
+      <!-- Master's Thesis -->
+      <article id="masters">
+	<h2 class="major">Master's Thesis</h2>
+	<h4>Post-processing of Cosmological Simulations</h4>
+	<p>For more details on the scientific content of the project,
+	see my <a href="./astronomy.html">Astronomy Research</a> page,
+	or my <a href="https://arxiv.org/abs/1610.00014">published
+	paper</a> from the project. The video below (produced by the
+	Illustris team) highlights the scale and breadth of the
+	simulation.</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/NjSFR40SY58" frameborder="0" allowfullscreen></iframe>
+	
+	<p><hr><p>
+	  
+	<p>The <a href="http://www.illustris-project.org/">Illustris
+	Simulation</a> was, in 2014 when it was completed, the most
+	computationally intensive simulation of the universe ever
+	completed. It tracked gravitational and hydrodynamic forces on
+	12 billion particles, took 19 million CPU hours (over 8200
+	  compute cores) to run, and resulted in nearly 1 PB of raw output data.</p>
+
+	<p>For my master's thesis project, I developed code to
+	post-process and analyze the data from the final &sim;10TB of
+	output. Each star particle was grouped into its host "galaxy",
+	and my code replicated making observational measurements on
+	real galaxies. These "mock observations" were found to
+	correlate strongly with unobservable properties of the
+	galaxies (such as how recently they had collided with a
+	neighboring galaxy), allowing our simulations to provide
+	context to the observations of real galaxies.</p>
+      </article>
+      
+      <!-- PhD Thesis -->
+      <article id="phd">
+	<h2 class="major">PhD Thesis</h2>
+	<h4>Bayesian Forward-modelling of Hubble Space Telescope Images with GPU Acceleration</h4>
+	<p>For more details on the scientific content of the project,
+	  see my <a href="./astronomy.html">Astronomy Research</a>
+	  page. Demonstrations of the model, written in Javascript to
+	  run in web browsers, are available on my <a href="./outreach.html">outreach page</a>. </p>
+	
+	<hr><p>
+	  
+	<p>With the incredible resolution of the Hubble Space
+	Telescope, astronomers can get more detailed view of our
+	neighboring galaxies than ever before. The image below shows
+	an example of how far we can zoom in on the Andromeda galaxy
+	with Hubble.</p>
+
+	<span class="image main"><img src="images/PHAT_M31.jpg" alt="Hubble image of M31" width="100%"/></span>
+	
+
+	<p>This incredible amount of data coming from each Hubble
+	image necessitates very complex and computationally intensive
+	models to interpret all the features that are observed. My PhD
+	Thesis project focuses on creating forward models of these
+	Hubble images: given a particular set of galaxy properties
+	(mass, age, chemical content, etc), my code creates a
+	simulated image of that galaxy as it would be observed by
+	Hubble. Many of these simulations (with different underlying
+	properties) can be compared to real Hubble observations and we
+	use Bayesian inference to estimate the properties of real
+	galaxies.</p>
+
+	<p>To simulate each image, my code randomly populates each of
+	the &gt;1 million pixels with anywhere between 10 to 1 billion
+	simulated stars, before convolved their light with a Gaussian
+	kernel simulating Hubble's optical resolution. This stochastic
+	process involves over 10<sup>10</sup> random draws from
+	  Poisson distributions.</p>
+
+	<p>Major portions of this algorithm are embarassingly parallel
+	and are perfectly suited to GPU-acceleration. After converting
+	major portions of my code from Python to GPU-accelerated CUDA
+	C, I managed to speed-up each simulation by a factor of over
+	16x. I also created a simplified version of the
+	code <a href="./outreach.html">for demonstration purposes</a>,
+	written in Javascript, which can be run natively in a web
+	browser. First results from our code will be submitted for
+	publication in Fall 2017.</p>
+      </article>
+    </div>      
       <!-- Footer -->
       <footer id="footer">
 	<p class="copyright">&copy; 2017 Ben Cook. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>

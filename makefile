@@ -4,7 +4,11 @@ demos = demos/demo_SSP.script demos/demo_SSP.div demos/demo_fullSFH.script demos
 
 clean:
 	rm -f *~
+	rm -f files/*~ images/*~ assets/*/*~
+
+clobber: clean
 	rm outreach.html
+
 
 outreach.html: demos/outreach.html $(demos)
 	cp $< $@
@@ -23,8 +27,8 @@ outreach.html: demos/outreach.html $(demos)
 	echo "<!-- DO NOT EDIT THIS AUTOMATICALLY GENERATED FILE\n EDIT THE FILE UNDER THE demos DIRECTORY -->\n" | cat - $@ > temp && mv temp $@
 
 
-copy: outreach.html
+copy: clean outreach.html
 	cp ~/CV/Cook_CV.pdf files/
-	cp ~/CV/Cook_resume.pdf files/
+	cp ~/CV/Cook_resume_2pg.pdf files/Cook_resume.pdf
 	echo "Should be connected to VPN"
-	scp -r *.html *.css files/ images/ assets/ bcook@mars.cfa.harvard.edu:/data/wdocs/bcook/www-docs/.
+	scp -r *.html files/ images/ assets/ bcook@mars.cfa.harvard.edu:/data/wdocs/bcook/www-docs/.

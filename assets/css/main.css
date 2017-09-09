@@ -687,14 +687,14 @@ input[type="radio"] + label:before {
     width: 100%;
 }
 .image.avatar {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
 }
 
 .image.avatar img {
-    border-radius: 100%;
+    border-radius: 50%;
     display: block;
-    width: 100%;
+    width: 14rem;
 }
 
 
@@ -775,7 +775,7 @@ ul.icons li a {
     text-align: center;
     width: 2.25rem;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 ul.icons li a:hover {
@@ -792,9 +792,9 @@ ul.icons li a span.label {
     background: #222222;
     color: #ffffff;
     top: -2.75em;
-    font-size: 1.5em;
-    height: 2em;
-    line-height: 2em;
+    font-size: 1em;
+    height: 1.5em;
+    line-height: 1.5em;
     left: 50%;
     opacity: 0;
     -moz-transition: opacity .25s ease-in-out;
@@ -1580,6 +1580,10 @@ body.is-loading #header .content .inner {
     padding-left: 1rem;
     padding-bottom: 1rem;
     padding-top: 2rem;
+}
+
+article p {
+    font-size: 1rem;
 }
 
 #main article.active {
