@@ -28,7 +28,6 @@ outreach.html: demos/outreach.html $(demos)
 
 
 copy: clean outreach.html
-	cp ~/CV/Cook_CV.pdf files/
-	cp ~/CV/Cook_resume_2pg.pdf files/Cook_resume.pdf
+	cp ~/CV/Cook_resume.pdf files/Cook_resume.pdf
 	echo "Should be connected to VPN"
 	scp -r *.html files/ images/ assets/ bcook@mars.cfa.harvard.edu:/data/wdocs/bcook/www-docs/.
