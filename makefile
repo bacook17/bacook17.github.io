@@ -27,7 +27,5 @@ outreach.html: demos/outreach.html $(demos)
 	echo "<!-- DO NOT EDIT THIS AUTOMATICALLY GENERATED FILE\n EDIT THE FILE UNDER THE demos DIRECTORY -->\n" | cat - $@ > temp && mv temp $@
 
 
-copy: clean outreach.html
+copy:
 	cp ~/CV/Cook_resume.pdf files/Cook_resume.pdf
-	echo "Should be connected to VPN"
-	scp -r *.html files/ images/ assets/ bcook@mars.cfa.harvard.edu:/data/wdocs/bcook/www-docs/.
